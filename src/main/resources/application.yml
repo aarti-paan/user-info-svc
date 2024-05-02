@@ -1,0 +1,17 @@
+server:
+  port: 9092
+
+Spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-plateform: org.hibernate.dialect.MySQL5InnoDBDialect
+  application:
+    name: USER-SERVICE
+
+
